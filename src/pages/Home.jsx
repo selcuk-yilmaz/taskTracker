@@ -17,10 +17,12 @@ localStorage.setItem("tasks",JSON.stringify(tasks));
 
 //  console.log(tasks);
   return (
-    <div>
+    <main>
+    <div className="headerShow">
       <Header tasks={tasks} setTasks={setTasks} />
       <ShowTasks tasks={tasks} setTasks={setTasks} />
     </div>
+    </main>
   );
 };
 

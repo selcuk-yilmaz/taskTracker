@@ -17,13 +17,13 @@ const ShowTasks = ({ tasks, setTasks }) => {
             }}
               />
                {/* {console.log(item.isDone)} */}
-              {item.task} <br /> {item.date} {item.id}
+              {item.task} <br /> 
               <MdClear
                 onClick={() => {
                   setTasks(tasks.filter((task) => task.id !== item.id));
                 }}
                 className="mdclear"
-              />
+              />{item.date}
             </li>
           </ul>
         );

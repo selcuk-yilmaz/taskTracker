@@ -86,11 +86,32 @@ body {
 .text-center {
   text-align: center;
 }
+main{
+  text-align: center;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+
+}
+.headerShow{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 2px solid red;
+   width: 700px;
+   text-align: center;
+    background-color: #d9afd9;
+  /* height: 100vh;  */
+}
+
+
 .mdclear{
   color:red;
   font-size: 2rem;
   cursor: pointer;
-  margin-left: 50px;
+  /* margin-left: 50px; */
 }
 .inva{
     /* display: inline-block; */
