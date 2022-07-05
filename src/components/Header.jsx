@@ -13,8 +13,8 @@ const Header = ({tasks,setTasks}) => {
   return (
     <header>
       <h1>Task Tracker</h1>
-      <button onClick={handleButton} type="button" className="btn btn-primary">
-        Add Task Tracker
+      <button onClick={handleButton} type="button" className= {control ? "btn btn-primary" : "btn btn-danger"}>
+        {control ? "Show Add Task Bar" : "Close Add Task Bar"}
       </button>
       {control && <AddTaskForm tasks={tasks} setTasks={setTasks} />}
     </header>
